@@ -9,32 +9,37 @@
 </head>
 <body>
     <header class="header"> <!--шапка-->
-        <nav class="header-nav"> <!--панель навигации-->
-            <ul class="header-list"> <!--кнопки ссылок-->
+        <nav class="header__nav"> <!--панель навигации-->
+            <ul class="header__list"> <!--кнопки ссылок-->
                 <li>
-                    <a href="works.html" class="header-menu">Works</a>
+                    <a href="works.html" class="header__menu header__menu--active">Works</a>
                 </li>
                 <li>
-                    <a href="blog.html" class="header-menu">Blog</a>
+                    <a href="blog.html" class="header__menu">Blog</a>
                 </li>
                 <li>
-                    <a href="contacts.html" class="header-menu">Contacts</a>
+                    <a href="contacts.html" class="header__menu">Contacts</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <div>
-                    <h1>Hi, I am John, <br> Creative Technologist</h1>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <a href="/resume.html">Download Resume</a>
+        <section class="first">
+            <div class="first__container">
+                <div class="first__description">
+                    <h1 class="first__title">
+                        Hi, I am John,<br> 
+                        Creative&nbsp;Technologist
+                    </h1>
+                    <p class="first__text">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <a href="/resume.html" class="button first__button">Download Resume</a>
                 </div>
-                <img src="/ava.jpg" alt="ava" width="243px">
+                <img src="/ava.jpg" alt="ava" class="first__img">
             </div>
         </section>
     </main>
-    <a href="wow.html" class="header-back">Wow</a>
+    <a href="wow.html" class="header__back">Wow</a>
 </body>
 </html>

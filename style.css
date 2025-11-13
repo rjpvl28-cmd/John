@@ -1,10 +1,65 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header-nav {
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Thin.ttf');
+    font-weight: 100;
+}
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-ExtraLight.ttf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-ExtraBold.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: Heebo;
+    src: url('fonts/Heebo-Black.ttf');
+    font-weight: 900;
+}
+
+body {
+    font-family: Heebo, Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* .header */ 
+
+.header__nav {
     display: flex;
     justify-content: end;
 }
@@ -14,23 +69,80 @@
     
 }
 
-.header-menu {
+.header__menu {
     color:black; 
     text-decoration: none;
     display: flex;
     font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
-.header-list {
+.header__menu--active {
+    color: #FF6464;
+}
+
+.header__list {
     list-style: none;
     display: flex;
     gap: 32px;
 }
 
-.header-back {
+.header__back {
     color:rgb(209, 6, 6); 
     text-decoration: none;
     font-size: 20px;
 }
-    /* space-between /*
+    /* .header */
+
+    /* .first */
+
+.first__container {
+    max-width: 856px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.first__description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    max-width: 500px;
+}
+
+.first__title {
+    line-height: 120%;
+    font-size: 44px;
+    font-weight: bold;
+    color: #21243D;
+}
+
+.first__text {
+    color: #21243D;
+}
+
+.first__img {
+    width: 243px; /* размеры кнопки */
+    height: 243px;
+    border-radius: 50%;
+    box-shadow: -5px 13px 0 #EDF7FA;
+}
+
+    /* .first */
+
+    /* .button */
+
+.button {
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    background-color: #FF6464;
+    color: #FFFFFF; 
+    border: none;
+    padding: 9px 20px;
+    display: inline-block; 
+
+}
